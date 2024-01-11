@@ -17,8 +17,8 @@ jobs:
       - name: Set up Docker
         uses: docker/setup-docker@v2
         with:
-          dockerfile: Dockerfile  # Adjust the path if your Dockerfile is in a different directory
-          container-name: wltmlx/postgres-docker-gcs-backup  
+          dockerfile: Dockerfile
+          container-name: wltmlx/postgres-docker-gcs-backup
 
       - name: Build Docker image
         run: docker build -t wltmlx/postgres-docker-gcs-backup .
